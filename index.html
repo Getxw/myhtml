@@ -7,7 +7,11 @@
 	<style type="text/css">
 		body{
 			height: 100%;
-			background-image: url(back.jpg);
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			overflow: hidden;
+			background-image: url();
 			background-size: 100% 100%;
 			
 		}
@@ -16,13 +20,12 @@
 		}
 		.div{
 			background-color: rgba(0,0,0,0);
-			width: 960px;
 			border: 1px solid red;
 		}
 		#time{
 			position: absolute;
 			width: 480px;
-			height: 163px;
+			height: 25px;
 			top:480px;
 		}
 		#picture{
@@ -31,25 +34,28 @@
 			height: 163px;
 			left: 0;
 			right: 0;
-			top:0;
-			margin: auto;     
+			top:20px;
+			margin: auto; 
+			color: red;  
+			text-align: center;
 		}
 		#text{
 			position: absolute;
-			top: 580px;
+			top: 410px;
 			width: 480px;
 			margin:auto;
-		    bottom:0;
-		    right: 0;
+		    height: 25px
 		}
 		#music{
 			position: absolute;
 			left: 0;
 			right: 0;
-			top: 164px;
+			top: 184px;
 			height: 240px;
 			width: 480px;
 			margin: auto;
+			text-align: center;
+			line-height: 284px;
 		}
 		@keyframes myfirst{
 			0%{opacity: 100}
@@ -59,17 +65,63 @@
 		img{
 			animation: myfirst 4s infinite;
 		}
+		#topnav{
+			width: 100%;
+			height: 20px;
+			background-color: gray;
+		}
+		.game{
+			color: red;
+
+		}
+		.XDD{
+			height: 100%;
+			width: 280px;
+			border: 1px solid red;
+		}
+		.xdd{
+			height: 50%;
+			width: 280px;
+			top:50%;
+			border-bottom: 1px solid red;
+		}
+		#XDD{
+			text-align: center;
+		}
+		#ow{
+			left: 0;
+			top: 400px;
+
+
+		}
 		</style>	
 </head>
 <body onload="Father()">
- <div id="picture" class="div" align="center" >
- <img id="img" src="1.jpg" alt="">
- <div id="time" style="color:black;font-size: 20px;text-align: center;">shijian</div>
- <p id="text" style="color: red;text-align:center;font-family: STXingkai; font-size:25px;">道,可道，非常道；名,可名，非常名。</p>
+<div id="picture" class="div">
+    <img id="img" src="1.jpg" alt="">
+    <div id="time">shijian</div>
+    <p id="text" class="div">道,可道，非常道；名,可名，非常名。</p>
  </div>
-  </div>
- <div id="music" class="div" align="center">
- <audio src="back.wav" controls="controls" autoplay="autoplay"></audio>
+ <div id="music" class="div">
+    <audio src="back.wav" controls="controls" autoplay="autoplay"></audio>
  </div>
+ <div id="topnav"></div>
+
+<div class="XDD" id="XDD">
+    <div class="xdd">
+     <p>简介</p>
+     <p>中原一点红</p>
+     <p></p>
+     <p></p>
+    </div>
+<div>
+    <p>放屁</p>
+     <div id="ow">隐隐约约</div>
+     <div id="cj">哈哈哈哈</div>
+     <div id="lol">红红火火</div>
+     <div id="cs">嘤嘤嘤嘤</div>
+</div>
+
+</div>
 </body>
 </html>
