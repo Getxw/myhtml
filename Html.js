@@ -34,7 +34,7 @@ function init(){
 }
 function tuPian(){
 	var tp = document.getElementById('tp');
-	tp.src="images/"+k+".jpg";
+	tp.src=k+".jpg";
 	//
 	tp.style.color="red"; 
 	k++;
@@ -50,7 +50,7 @@ function startTp(){
 }
 function tingtu(m,j){
 	var obj = document.getElementById('tp');
-	obj.src="images/"+m+".jpg"
+	obj.src=m+".jpg";
 	// for(var k=10;k<=15;k++){
 	// 	var obj=document.getElementById("li"+k);
 	// 	obj.style.color="black";
