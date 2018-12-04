@@ -15,7 +15,7 @@ body{
 	line-height: 50px;
 	font-size: 25px;
 	letter-spacing: 20px;
-	background-image: url("bg1.jpg");
+	background-image: url("images/bg1.jpg");
 	color: red;
 }
 #nav{
@@ -40,7 +40,7 @@ body{
 
 #li{
 	position: relative;
-	margin:0 auto;
+	margin:auto 0;
 	text-align: center;
 	
 }
@@ -52,20 +52,28 @@ ul li{
 	height: 20px;
 	line-height: 20px;
 	width: 98px;
+	text-align: center;
+	
 	
 }
 #li2,#li3,#li4{
-	border: 1px solid red;
 	color: gray;
+	border: 1px solid red;
+}
+#li1{
+	color: gray;
+	border-top: 1px solid red;
+	border-left: 1px solid red;
+	border-right: 1px solid red;
 }
 
-#li1{
+/*#li1{
 	border-top: 1px solid red;
 	border-right: 1px solid red;
 	border-left: 1px solid red;
 	color: red;
 
-}
+}*/
 #massages{
 	width: 398px;
 	height: 360px;
