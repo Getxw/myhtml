@@ -24,7 +24,7 @@
 var d=document.getElementById("Mycanvas");
 var ctx=d.getContext("2d");
 window.onload=function(){
-    draw();
+//     draw();
     // var img=new Image();
     // img.src="xln.jpg";
     // ctx.drawImage(img,0,0,600,600);
@@ -49,17 +49,17 @@ window.onload=function(){
 
 }
 //绘制坐标参考线
-function draw(){
-    ctx.strokeStyle="gray";
-    for(var i=0;i<=600;i+=50){
-    ctx.beginPath();
-    ctx.moveTo(i,0);
-    ctx.lineTo(i,600);
-    ctx.moveTo(0,i);
-    ctx.lineTo(600,i);
-    ctx.stroke();
-}
-}
+// function draw(){
+//     ctx.strokeStyle="gray";
+//     for(var i=0;i<=600;i+=50){
+//     ctx.beginPath();
+//     ctx.moveTo(i,0);
+//     ctx.lineTo(i,600);
+//     ctx.moveTo(0,i);
+//     ctx.lineTo(600,i);
+//     ctx.stroke();
+// }
+// }
 </script>
 </body>
 </html>
