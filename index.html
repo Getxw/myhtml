@@ -1,41 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="layout.css" type="text/css" /> 
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	   .box{
+	   	  margin:0 auto;
+/*	   	  border: 1px solid gray;*/
+          margin-top: 50px;
+	   	  height:600px;
+	   	  width:600px;
+
+	   }
+	</style>
+
 </head>
 <body>
-<div id="Topbox">
-    <marquee id="mq" onmouseover=this.stop() onmouseout=this.start() scrollamount="3">倚楼听风雨，淡看江湖路</marquee>
-</div>
-<div id="nav"></div>
-<div id="main">
-    <div id="leader">
-         <ul>
-             <li id="li1" onclick="li(1,this)">天</li>
-             <li id="li2" onclick="li(2,this)">玄</li>
-             <li id="li3" onclick="li(3,this)">地黄</li>
-             <li id="li4" onclick="li(4,this)">呵</li>
-         </ul>
-         <div id="massages">
-         <div id="p1">《易经》上说：“形而上者谓之道，形而下者谓之器”。天地宇宙未生之前，是混沌状态的</div>
-         </div>
-    </div> 
-    <div id="rbox">
-        <img id="tp" onmouseover="stopTp()" onmouseout="startTp()" src="images/10.jpg">
-        <ul id="li">
-           <li id="li10" onmouseover="tingtu(10,this)" onmouseout="dongtu(this)">1</li>
-           <li id="Li11" onmouseover="tingtu(11,this)" onmouseout="dongtu(this)">2</li>
-           <li id="Li12" onmouseover="tingtu(12,this)" onmouseout="dongtu(this)">3</li>
-           <li id="Li13" onmouseover="tingtu(13,this)" onmouseout="dongtu(this)">4</li>
-           <li id="Li14" onmouseover="tingtu(14,this)" onmouseout="dongtu(this)">5</li>
-        </ul>
-    </div>
-</div>
-<div id="bombox">
-     <div id="bom">Go fuck yourself,bitch!</div>
-</div>
-<script src="Html.js"></script>
+<div class="box"><canvas id="Mycanvas" height="600px" width="600px">不支持canvas!</canvas></div>
+<script>
+var d=document.getElementById("Mycanvas");
+var ctx=d.getContext("2d");
+window.onload=function(){
+    draw();
+    // var img=new Image();
+    // img.src="xln.jpg";
+    // ctx.drawImage(img,0,0,600,600);
+    ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(300,150);
+	ctx.quadraticCurveTo(150,50,120,200);
+	ctx.quadraticCurveTo(100,350,300,500);
+	ctx.quadraticCurveTo(500,350,480,200);
+	ctx.quadraticCurveTo(450,50,300,150);
+	// ctx.stroke();
+	ctx.fillStyle="red";
+	// ctx.fill();
+	ctx.shadowColor = "gray"; 
+    ctx.shadowOffsetX = 10; 
+    ctx.shadowOffsetY = 5; 
+    ctx.shadowBlur = 10; 
+    ctx.fill();
+    ctx.font="24px 宋体";
+    ctx.fillText("Thanks for your accompany all of my days.",50,560);
+
+}
+//绘制坐标参考线
+function draw(){
+    ctx.strokeStyle="gray";
+    for(var i=0;i<=600;i+=50){
+    ctx.beginPath();
+    ctx.moveTo(i,0);
+    ctx.lineTo(i,600);
+    ctx.moveTo(0,i);
+    ctx.lineTo(600,i);
+    ctx.stroke();
+}
+}
+</script>
+	
 </body>
 </html>
