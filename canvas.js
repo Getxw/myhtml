@@ -1,6 +1,6 @@
 var d=document.getElementById("Mycanvas");
 var ctx=d.getContext("2d");
-window.onload=function(){
+function draw(){
     // draw();
     ctx.beginPath();
 	ctx.moveTo(300,150);
@@ -13,7 +13,7 @@ window.onload=function(){
 	ctx.fillStyle="#f00";
 	// ctx.fill();
 	ctx.shadowColor = "gray"; 
-    ctx.shadowOffsetX = 5; 
+    ctx.shadowOffsetX = 10; 
     ctx.shadowOffsetY = 5; 
     ctx.shadowBlur = 5; 
     ctx.fill();
@@ -22,6 +22,7 @@ window.onload=function(){
     ctx.fillText("---他是个宝宝",400,590);
 
 }
+draw();
 // 绘制坐标参考线
 // function draw(){
 //     ctx.strokeStyle="gray";
