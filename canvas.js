@@ -13,9 +13,9 @@ window.onload=function(){
 	ctx.fillStyle="#f00";
 	// ctx.fill();
 	ctx.shadowColor = "gray"; 
-    ctx.shadowOffsetX = 10; 
+    ctx.shadowOffsetX = 5; 
     ctx.shadowOffsetY = 5; 
-    ctx.shadowBlur = 10; 
+    ctx.shadowBlur = 5; 
     ctx.fill();
     ctx.font="24px 宋体";
     ctx.fillText("Thanks for your accompany all of my days.",50,540);
