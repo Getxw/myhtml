@@ -1,3 +1,12 @@
+try{
+            if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                // window.location.href="mindex.html";
+                alert("手机滚！");
+            }else{
+                // window.location.href="cindex.html";
+                alert("欢迎爸爸!");
+                }
+            }catch(e){}
 var i=0;
 var arr=new Array();
 arr[0]="images/0.jpg";
