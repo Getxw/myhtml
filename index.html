@@ -4,6 +4,18 @@
 	<meta charset="UTF-8">
 	<title>STUDY HTML</title>
 	<link rel="stylesheet" href="hera.css">
+	<script>
+        try{
+           if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+              // window.location.href="index.html";
+              alert("手机滚！");
+	      window.close();
+          }else{
+             // window.location.href="cindex.html";
+             alert("欢迎爸爸!");
+       }
+   }catch(e){}
+	</script>
 </head>
 <body>
 <div class="top">
@@ -85,7 +97,7 @@
         <img src="images/8.png" alt="">
     </div>
 </div>
-<script src="hera.js">
+<script src="hera.js"/>
 </script>
 </body>
 </html>
