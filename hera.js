@@ -46,3 +46,6 @@ function start(){
 	img.src=arr[i];
 }
 var timer=setInterval(start,2000);
+function study(){
+	window.open("www.baidu.com");
+}
