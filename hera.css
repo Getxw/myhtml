@@ -223,6 +223,7 @@ body{
 	    	float: left;
 	    	text-align: center;
 	    	background-size: 100% 100%;
+		box-shadow: 5px 2px 5px #040404;
 	    }
 	    .btm_box div:first-child{
 	    	margin:0;
