@@ -224,6 +224,7 @@ body{
 	    	text-align: center;
 	    	background-size: 100% 100%;
 		box-shadow: 5px 2px 5px #040404;
+		border-radius:5px;
 	    }
 	    .btm_box div:first-child{
 	    	margin:0;
@@ -265,6 +266,7 @@ body{
 	    	height: 35px;
 	    	line-height: 35px;
 	    	background-color: #d4d0d0;
+		border-radius:0 0 5px 5px;
 	    	left: 0;
 	    	bottom: 0;
 	    }
