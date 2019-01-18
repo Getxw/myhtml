@@ -233,6 +233,7 @@ body{
 	    }
 	    .bottom_box{
 	    	padding-top: 50px;
+		overflow:hidden;
 	    	position: relative;
 	    	margin:0 auto;
 	    	width: 960px;
@@ -247,11 +248,13 @@ body{
 	    }
 	    .bottom_box span{
 	    	position: absolute;
+		display:block;
 	    	bottom: 50px;
 	    	left: 120px;
 	    }
 	    .bottom_box img{
-	    	overflow: hidden;
+	        display:block;
+		overflow:hidden;
 	    	clear: both;
 	    	margin-top: 35px;
 	    	height: 100px;
