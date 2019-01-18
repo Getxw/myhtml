@@ -4,7 +4,7 @@ function draw(){
     // draw();
     ctx.font="24px 宋体";
     ctx.fillText("Thanks for your accompany all of my days.",50,540);
-    ctx.fillText("---坏蛋",400,590);
+    ctx.fillText("--爱吃小馒头",400,590);
 	ctx.moveTo(300,150);
 	ctx.quadraticCurveTo(150,50,120,200);
 	ctx.quadraticCurveTo(100,350,300,500);
