@@ -46,7 +46,9 @@ function start(){
     }
 	img.src=arr[i];
 }
-var timer=window.onload=setInterval(start,2000);
+window.onload=function(){
+	var timer=setInterval(start,2000);
+}
 function study(){
 	window.open("study.html");
 }
