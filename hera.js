@@ -1,54 +1,85 @@
-
-var i=0;
-var arr=new Array();
-arr[0]="images/0.jpg";
-arr[1]="images/1.jpg";
-arr[2]="images/2.jpg";
-arr[3]="images/3.jpg";
-arr[4]="images/4.jpg";
-arr[5]="images/5.jpg";
-function start(){
-	var img=document.getElementById('img');
-	var prev=document.getElementById('img_last');
-	var next=document.getElementById('img_next');
-	if(i==arr.length-1){
-		i=0;
-	}else{
-		i++;
+var index = 0;
+var prev=document.getElementById('img_last');
+var next=document.getElementById('img_next');
+function change(){
+	var num=document.getElementById('num_'+index);
+	for(var k=0;k<=5;k++){
+	var obj=document.getElementById('num_'+k);
+    obj.style.backgroundColor="gray";
+    }
+	num.style.backgroundColor="red";
+}
+window.onload=function load()
+	{
+	var divs = document.getElementsByTagName("div");
+	for (var i = 0; i < divs.length; i++){
+		if (divs[i].className == "div"){
+			divs[i].style.width = document.body.clientWidth / 2 - 2 + "px";
+			divs[i].style.height = document.body.clientHeight / 2 - 2 + "px";
+		}
 	}
-	function change(){
-	    var num=document.getElementById('num_'+i);
-	    for(var k=0;k<=5;k++){
-		var obj=document.getElementById('num_'+k);
-		obj.style.backgroundColor="gray";
-		num.style.backgroundColor="red";
+	var timer=setInterval(makePic,3000);
+	prev.onclick=function(){
+    window.clearInterval(timer);
+    makeImg();
+	if(index==0){
+	    	index=6;
 	    }
-	}
-	change();
-    prev.onclick=function(){
-
-	    window.clearInterval(timer);
-	    i--;
-	    if(i<0){
-	    	i=5;
-	    }
-	    change();
-	    img.src=arr[i];
     }
     next.onclick=function(){
-	    window.clearInterval(timer);
-	    i++;
-	    if(i>5){
-	    	i=0;
-	    }
-	    change();
-	    img.src=arr[i];
+	window.clearInterval(timer);
+	makePic();
+	if(index>5){
+	    index=0;
+	}
     }
-	img.src=arr[i];
+
 }
-window.onload=function(){
-	var timer=setInterval(start,2000);
+window.onresize = function(){
+	window.resizeTo(1920, 1080);
 }
-function study(){
-	window.open("study.html");
+function makePic(){
+	var pDiv = document.getElementById("parent");
+	pDiv.innerHTML = "";
+	for (var i = 0; i < 6; i++){
+		for (var j = 0; j < 10; j++){
+			var cDiv = document.createElement("div");
+			cDiv.style.left = pDiv.clientWidth / 10* j + "px";
+			cDiv.style.top = pDiv.clientHeight / 6 * i + "px";
+			cDiv.setAttribute("class", "inner");
+			cDiv.style.background = "url(images/" + index + ".jpg) no-repeat " + pDiv.clientWidth / 10 * (-j) + "px " + pDiv.clientHeight / 6 * (-i) + "px";
+			pDiv.appendChild(cDiv);
+		}
+	}
+	index == 5 && (index = -1);
+	pDiv.style.background = "url(images/" + (++index) + ".jpg)";
+	smash();
+}
+function smash(){
+	change();
+	var pDiv = document.getElementById("parent");
+	var nodes = pDiv.childNodes;
+	for (var i = 0; i < nodes.length; i++){
+		nodes[i].style.transform = "rotateX(" + Math.ceil(Math.random() * 360 - 180) + "deg) rotateY(" + Math.ceil(Math.random() * 360 - 180) + "deg) " + 
+		"translate3d(" + Math.ceil(Math.random() * 800 - 400) + "px," + Math.ceil(Math.random() * 800 - 400)  + "px," + Math.ceil(Math.random() * 800 - 400) + "px)";
+		//nodes[i].style.left = (512 - 64) + 'px';
+		nodes[i].style.opacity = "0";
+	}
+}
+function makeImg(){
+	var pDiv = document.getElementById("parent");
+	pDiv.innerHTML = "";
+	for (var i = 0; i < 6; i++){
+		for (var j = 0; j < 10; j++){
+			var cDiv = document.createElement("div");
+			cDiv.style.left = pDiv.clientWidth / 10* j + "px";
+			cDiv.style.top = pDiv.clientHeight / 6 * i + "px";
+			cDiv.setAttribute("class", "inner");
+			cDiv.style.background = "url(images/" + index + ".jpg) no-repeat " + pDiv.clientWidth / 10 * (-j) + "px " + pDiv.clientHeight / 6 * (-i) + "px";
+			pDiv.appendChild(cDiv);
+		}
+	}
+	index == -1 && (index = 5);
+	pDiv.style.background = "url(images/" + (--index) + ".jpg)";
+	smash();
 }
