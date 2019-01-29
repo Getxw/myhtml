@@ -112,7 +112,7 @@ body{
 		height: 67px;
 		transition: all 1.5s ease;
 		}
-	    #advertise{
+/* 	    #advertise{
 	    	position: relative;
 	    	width: 80px;
 	    	height: 300px;
@@ -121,7 +121,7 @@ body{
 	    	top:35%;
 	    	background-color:#4b2358; 
 
-	    }
+	    } */
 	    #advertise img{
 	    	width: 32px;
 	    	height: 32px;
