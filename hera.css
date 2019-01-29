@@ -95,15 +95,23 @@ body{
 	    }
 	    .img{
 	    	position: absolute;
-	    	width: 100%;
+	    	width: 960px;
 	    	height: 400px;
 	    	top: 0;
 	    	left: 0;
 	    }
-	    .img img{
+	    #parent{
+	    	position: absolute;
 	    	width: 960px;
 	    	height: 400px;
+	    	background:url(images/0.jpg);
 	    }
+	    .inner{
+		position: absolute;
+		width: 96px;
+		height: 67px;
+		transition: all 1.5s ease;
+		}
 	    #advertise{
 	    	position: relative;
 	    	width: 80px;
