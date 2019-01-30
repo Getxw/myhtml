@@ -84,5 +84,5 @@ function makeImg(){
 	smash();
 }
 function study(){
-	window.open(study.html);
+	window.open('study.html');
 }
