@@ -83,3 +83,6 @@ function makeImg(){
 	pDiv.style.background = "url(images/" + (--index) + ".jpg)";
 	smash();
 }
+function study(){
+	window.open(https://github.com/Getxw/myhtml/)
+}
