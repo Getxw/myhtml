@@ -84,5 +84,5 @@ function makeImg(){
 	smash();
 }
 function study(){
-	window.open(https://github.com/Getxw/myhtml/)
+	window.open("https://github.com/Getxw/myhtml/study.html");
 }
