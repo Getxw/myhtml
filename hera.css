@@ -75,7 +75,7 @@ body{
             .content_box{
 		width:100%;
 		hight:100%;
-		background-image:url(images/content_box_bj.jpg);
+		background-image:url(images/content_box_bj.jpg) no-repeat;
 		
             }
 	    .content{
