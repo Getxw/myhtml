@@ -72,6 +72,11 @@ body{
 	    .menu_li li:hover{
 	    	color: #170cf5;
 	    }
+            .content_box{
+		width:100%;
+		hight:100%;
+		background-color:green;
+            }
 	    .content{
 	    	position: relative;
 	    	width: 960px;
