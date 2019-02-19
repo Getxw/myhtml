@@ -41,11 +41,11 @@ window.onresize = function(){
 function makePic(){
 	var pDiv = document.getElementById("parent");
 	pDiv.innerHTML = "";
-	for (var i = 0; i < 4; i++){
-		for (var j = 0; j < 8; j++){
+	for (var i = 0; i < 6; i++){
+		for (var j = 0; j < 10; j++){
 			var cDiv = document.createElement("div");
-			cDiv.style.left = pDiv.clientWidth / 8* j + "px";
-			cDiv.style.top = pDiv.clientHeight / 4 * i + "px";
+			cDiv.style.left = pDiv.clientWidth / 10* j + "px";
+			cDiv.style.top = pDiv.clientHeight / 6 * i + "px";
 			cDiv.setAttribute("class", "inner");
 			cDiv.style.background = "url(images/" + index + ".jpg) no-repeat " + pDiv.clientWidth / 10 * (-j) + "px " + pDiv.clientHeight / 6 * (-i) + "px";
 			pDiv.appendChild(cDiv);
@@ -69,11 +69,11 @@ function smash(){
 function makeImg(){
 	var pDiv = document.getElementById("parent");
 	pDiv.innerHTML = "";
-	for (var i = 0; i < 4; i++){
-		for (var j = 0; j < 8; j++){
+	for (var i = 0; i < 6; i++){
+		for (var j = 0; j < 10; j++){
 			var cDiv = document.createElement("div");
-			cDiv.style.left = pDiv.clientWidth / 8* j + "px";
-			cDiv.style.top = pDiv.clientHeight / 4 * i + "px";
+			cDiv.style.left = pDiv.clientWidth / 10* j + "px";
+			cDiv.style.top = pDiv.clientHeight / 6 * i + "px";
 			cDiv.setAttribute("class", "inner");
 			cDiv.style.background = "url(images/" + index + ".jpg) no-repeat " + pDiv.clientWidth / 10 * (-j) + "px " + pDiv.clientHeight / 6 * (-i) + "px";
 			pDiv.appendChild(cDiv);
