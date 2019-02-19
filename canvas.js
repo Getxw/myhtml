@@ -20,7 +20,7 @@ function draw(){
 
 }
 draw();
-console.log("Fuck you");
+console.log("You can fuck me all the time in the future by the surprise scene.");
 // 绘制坐标参考线
 // function draw(){
 //     ctx.strokeStyle="gray";
