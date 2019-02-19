@@ -11,7 +11,7 @@ function draw(){
 	ctx.quadraticCurveTo(500,350,480,200);
 	ctx.quadraticCurveTo(450,50,300,150);
     // ctx.stroke();
-	ctx.fillStyle="black";
+	ctx.fillStyle="red";
 	ctx.shadowColor = "#232020"; 
     ctx.shadowOffsetX = 20; 
     ctx.shadowOffsetY = -10; 
