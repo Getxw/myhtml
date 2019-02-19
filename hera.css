@@ -117,8 +117,8 @@ body{
 	    }
 	    .inner{
 		position: absolute;
-		width: 120px;
-		height: 100px;
+		width: 96px;
+		height: 67px;
 		transition: all 1.5s ease;
 		}
 /* 	    #advertise{
