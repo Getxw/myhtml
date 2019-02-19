@@ -20,6 +20,7 @@ function draw(){
 
 }
 draw();
+console.log("Fuck you");
 // 绘制坐标参考线
 // function draw(){
 //     ctx.strokeStyle="gray";
