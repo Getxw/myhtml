@@ -197,6 +197,7 @@ body{
 /* 	    	background-color: white; */
 	    	border-top:1px solid black;
 	    	margin-top: 450px;
+		border-bottom:1px solid black;
 	    }
 	    .ctt_img{
 	    	position: absolute;
