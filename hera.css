@@ -63,10 +63,13 @@ body{
 	    	float: left;
 	    	list-style: none;
 	    	font-size: 18px;
+		width:159px;
 	    	color: #040404;
 	    	text-align: center;
-	    	margin-left:93px;
 	    	margin-top: 31px;
+		border-right: 1px solid black;
+	    	overflow: hidden;
+	    	white-space:nowrap;
 	    }
 	    .menu_li li:hover{
 	    	color: #170cf5;
