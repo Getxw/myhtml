@@ -297,12 +297,14 @@ body{
 	    .bottom_box #cxj{
 	    	position: absolute;
 		font-family: myfont;
+		font-size:20px;
 	    	bottom: 70px;
 	    	left: 120px;
 	    }
 	    .bottom_box #xmt{
 	    	position: absolute;
 		font-family: myfont;
+		font-size:20px;
 	    	bottom: 40px;
 	    	left: 440px;
 	    }
