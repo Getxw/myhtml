@@ -198,11 +198,12 @@ body{
 	    .ctt{
 	    	position: absolute;
 	    	width: 960px;
-	    	height: 400px;
+	    	height: 370px;
 /* 	    	background-color: white; */
 	    	border-top:1px solid black;
 	    	margin-top: 450px;
 		border-bottom:1px solid black;
+		padding-top:10px;
 	    }
 	    .ctt_img{
 	    	position: absolute;
@@ -243,7 +244,7 @@ body{
 	    }
 	    .btm_img{
 	    	position: absolute;
-	    	margin-top: 840px;
+	    	margin-top: 812px;
 	    	margin-left: 375px;
 	    }
 	    .btm_box div{
