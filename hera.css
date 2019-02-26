@@ -28,17 +28,17 @@ body{
 	    	color: transparent;
 	    	-webkit-background-clip:text;
 	    }
-            @font-face{
-	    	font-family: myfont;
-	    	src:url(font/STXINGKA.TTF);
-	    }
 	    .logo p{
 	    	text-align: center;
 	    	font-size: 80px;
 	    	font-family: myfont;
 	    	line-height: 80px;
 	    	
-	    }	
+	    }
+            @font-face{
+	    	font-family: myfont;
+	    	src:url(font/STXINGKA.TTF);
+	    }
 	    #menu{
 	    	width: 100%;
 	    	height: 80px;
@@ -296,6 +296,7 @@ body{
 	    }
 	    .bottom_box #cxj{
 	    	position: absolute;
+		font-family: myfont;
 	    	bottom: 70px;
 	    	left: 120px;
 	    }
