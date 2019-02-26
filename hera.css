@@ -293,11 +293,15 @@ body{
 	    	margin-right: 10px;
 	    	border-right: 1px solid #040404; 
 	    }
-	    .bottom_box span{
+	    .bottom_box #cxj{
 	    	position: absolute;
-		display:block;
-	    	bottom: 50px;
+	    	bottom: 70px;
 	    	left: 120px;
+	    }
+	    .bottom_box #xmt{
+	    	position: absolute;
+	    	bottom: 40px;
+	    	left: 295px;
 	    }
 	    .bottom_box img{
 	        display:block;
