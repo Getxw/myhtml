@@ -284,6 +284,7 @@ body{
 	    	position: relative;
 	    	margin:0 auto;
 	    	width: 960px;
+		height:150px;
 	    	background-size: 100px 100px;
 	    }
 	    .bottom_box p{
@@ -310,6 +311,10 @@ body{
 	    	margin-top: 35px;
 	    	height: 100px;
 	    	width: 100px;
+	    }
+            .bottom_box img:hover{
+	    	height: 110px;
+	    	width: 110px;
 	    }
 	    .fk_img{
 	    	position: absolute;
