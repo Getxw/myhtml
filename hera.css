@@ -302,6 +302,7 @@ body{
 	    }
 	    .bottom_box #xmt{
 	    	position: absolute;
+		font-family: myfont;
 	    	bottom: 40px;
 	    	left: 440px;
 	    }
