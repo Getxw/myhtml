@@ -86,3 +86,6 @@ function makeImg(){
 function study(){
 	window.open('study.html');
 }
+function play(){
+    	alert("买不起服务器，无法播放！");
+    }
