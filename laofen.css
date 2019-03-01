@@ -1,0 +1,62 @@
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	height: 100%;
+	width: 100%;
+	background-image:url(images/laofen.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.top{
+	position: relative;
+	width: 960px;
+	height: 600px;
+	margin:40px 25%;
+}
+#music_box{
+	position: absolute;
+	width: 300px;
+	height: 400px;
+	/*background-color: gray;
+	opacity: .2;
+	filter: alpha(opacity=20);*/
+	left: 10px;
+	top: 50px;
+}
+#music{
+	margin-top: 40px;
+	/*border: 1px solid red;*/
+	height: 100%;
+}
+#music_list li,div{
+	text-decoration: none;
+	list-style: none;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+}
+.music_list{
+	width: 600px;
+	float: left;
+	margin:5px 0;
+}
+.play{
+	height: 20px;
+	width: 20px;
+	background: url(images/table.png);
+	background-position: 120px -101px;
+}
+.play:hover{
+	background: url(images/table.png);
+	background-position: 120px -126px;
+}
+#yinpin{
+	position: absolute;
+	margin:0;
+	width: 960px;
+	height: 40px;
+	left: 0px;
+	bottom: 0px;
+}
