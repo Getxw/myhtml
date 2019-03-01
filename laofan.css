@@ -73,7 +73,17 @@ html{
 }
 .introd .img{
 	width: 130px;
+	height: 200px;
+	margin:2px;
+	right: 0;
+}
+.introd .img a{
+	margin-left: 45px;
+}
+.introd .img img{
+	width: 130px;
 	height: 180px;
+
 }
 #more{
 	position: absolute;
