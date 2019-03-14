@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>学习canvas特效</title>
+	<style>
+	    *{
+	    	padding: 0;
+	    	margin:0;
+	    }
+	    canvas{
+	    	display: block;
+	    	background-color: black;
+	    }
+	    div{
+	    	
+	    }
+	</style>
+	
+	</script>
+</head>
+<body>
+    <div id="mouse">123</div>
+	<canvas id="canvas">you browser does not support the canvas element.</canvas>
+	<script type="text/javascript">
+        var can =document.getElementById("canvas");
+        var ctx = can.getContext("2d");
+        var w=can.width=window.innerWidth;
+        var h=can.height=window.innerHeight;
+        window.onresize=function(){
+	        w=can.width=window.innerWidth;
+	        h=can.height=window.innerHeight;
+        }
+        var color =["#fd0511","#3ffd05","#051eff","#fcff05","#f005ff","#7b05ff","#b9b7bb","#f1f90a","#05cdff"];
+        function Dot(){
+        	this.x = Math.random()*w;
+        	this.y = Math.random()*h;
+        	this.r = Math.random()*5;
+        	this.vx = -0.5+Math.random();
+        	this.vy = -0.5+Math.random();
+        	this.color = color[parseInt(Math.random()*8)];
+        }
+        Dot.prototype.draw = function(){
+            ctx.beginPath();
+            ctx.fillStyle =this.color;
+            ctx.arc(this.x,this.y,this.r,0,Math.PI*2,true);
+            ctx.fill();
+            this.update();
+        }
+        Dot.prototype.update = function(){
+        	if(this.x<0||this.y<0||this.x>w||this.y>h){
+        		this.vx =-this.vx;
+        		this.vy =-this.vy;
+        	}
+        	this.x += this.vx;
+        	this.y += this.vy;
+        }
+        var dots = [];
+        for(var i = 0;i<1000;i++){
+        	dots.push(new Dot());
+
+        }
+        console.log(dots);
+        function dotDraw(){
+        	ctx.clearRect(0,0,w,h);
+        	var l = dots.length;
+            for(var i=0;i<l;i++ ){
+            	dots[i].draw();
+            }
+        }
+        setInterval(dotDraw,30);
+    </script>
+</body>
+</html>
